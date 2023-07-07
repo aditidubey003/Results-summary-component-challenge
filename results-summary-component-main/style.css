@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+ /*..... Custom Design.....  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Satisfy&display=swap');
+
+
+ body{
+  font-family:'Hanken Grotesk', sans-serif; 
+}
+
+
+
+.container{
+    max-width: 1400px;
+    margin: 120px auto;
+    padding: 0 32px;
+ }
+
+ .design-box{
+    display: flex;
+    border-radius: 20px;
+     width:540px ;
+     margin: 0 auto;
+     font-size: 18px;
+     /* background-color: hsl(241, 100%, 89%); */
+     background-color:   hsl(0, 0%, 100%);
+     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+ }
+
+ /* p{
+   font-size: 18px;
+ } */
+ .left{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color:  hsl(241, 100%, 89%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+
+ }
+
+
+
+ .left, .right{
+    width: 270px;
+    padding: 20px;
+ }
+
+
+.result{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.score-info{
+ text-align: center;
+   width: 100%;
+   font-size: 16px;
+ 
+}
+ .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient( hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    color: #fff;
+    /* font-size: 30px; */
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin: 0 auto;
+    line-height: 150px;
+ }
+ .score{
+   color: hsl(241, 100%, 89%);
+   /* font-size: 16px; */
+ }
+ 
+ .digit{
+    font-size: 60px;
+    font-weight: bold;
+    /* font-family: 'Hanken Grotesk', sans-serif;  */
+    color: #fff;
+
+ }
+ 
+ .great{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+ }
+
+ .summary{
+font-weight: bold ;
+font-size: 18px;
+color: hsl(224, 30%, 27%) ;
+ }
+
+ .right{
+   display: flex;
+   flex-direction: column;
+  font-size: 16px;
+ }
+
+ .box{
+/* width: 50%; */
+
+margin: 10px 0 ;
+padding:10px;
+border-radius: 5px;
+ }
+
+ .btn{
+   padding: 12px;
+   background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+   color: #fff;
+   border-radius: 20px;
+   margin-top: 20px;
+   text-align: center;
+   font-size: 16px;
+ }
+
+ .logo{
+   display: flex;
+ }
+
+
+ .reaction-box{
+   background-color:  hsla(0, 100%, 67%, 0.1);
+   color: grey;
+ }
+ .memory-box{
+   background-color: hsla(39, 100%, 56%, 0.1) ;
+   color: grey;
+ }
+
+ .verbal-box{
+  background-color: hsl(166, 100%, 37%, 0.1);
+  color: grey;
+ }
+
+ .visual-box{
+   background-color:hsl(234, 85%, 45%, 0.1) ;
+   color: grey;
+}
+
+.flex{
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.reaction{
+   color:  hsl(0, 100%, 67%);
+}
+
+.memory{
+   
+   color: hsl(39, 100%, 56%) ;
+}
+
+.verbal{
+color: hsl(166, 100%, 37%);
+}
+
+.visual{
+   color:hsl(234, 85%, 45%) ;
+}
+
+.highlighted-score{
+   color: hsl(224, 30%, 27%) ;
+}
+
+
+.reaction-logo , .memory-logo, .verbal-logo, .visual-logo{
+   margin-right: 5px;
+   line-height:10px ;
+}
+/* ### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */
